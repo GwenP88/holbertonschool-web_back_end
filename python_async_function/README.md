@@ -55,7 +55,7 @@ python3 filename.py
 
 ## Project Progress
 <p align="center">
-<img src="assets/progress_barre_100.gif" alt="Mandatory tasks progress" width="100%">
+<img src="assets/progress_barre_100.gif" alt="Mandatory tasks progress" width="80%">
 </p>
 
 <p align="center">
