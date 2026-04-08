@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Basic asynchronous coroutine module."""
-import random, asyncio
+import random
+import asyncio
 
 
-async def wait_random(max_delay = 10):
+async def wait_random(max_delay=10):
     """Wait for a random delay and return it"""
     r = random.uniform(0, max_delay)
     await asyncio.sleep(r)
