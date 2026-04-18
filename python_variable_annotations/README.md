@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.png" alt="holbertonschool-web-back-end Banner">
+</p>
+
 # Python - Variable Annotations
 
 > Type hints: because your future self deserves to know what that function actually expects.

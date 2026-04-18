@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.jpeg" alt="holbertonschool-web-back-end Banner">
+</p>
+
 # Python - Async Comprehension
 
 > Async generators, async comprehensions, and the satisfying mystery of why 4 × 10s equals 10s.

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.png" alt="holbertonschool-web-back-end Banner">
+</p>
+
 # Python - Async Function
 
 > `async`, `await`, and the art of doing several things at once without losing your mind.
