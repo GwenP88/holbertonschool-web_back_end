@@ -4,7 +4,6 @@ Deletion-resilient hypermedia pagination
 """
 
 import csv
-import math
 from typing import List, Dict, Union
 
 
@@ -39,14 +38,15 @@ class Server:
     def get_hyper_index(
             self, index: int = None, page_size: int = 10
             ) -> Dict[str, Union[int, List[List], None]]:
-        """"""
+        """Return paginated data resilient to deletion between requests."""
         data = []
         if index is None:
             index = 0
         assert isinstance(index, int) and index >= 0
         indexed_dataset = self.indexed_dataset()
         current_index = index
-        while len(data) < page_size and current_index < len(indexed_dataset):
+        max_index = max(indexed_dataset)
+        while len(data) < page_size and current_index <= max_index:
             if current_index in indexed_dataset:
                 data.append(indexed_dataset[current_index])
             current_index += 1
