@@ -27,6 +27,7 @@ holbertonschool-web_back_end/
 ├── python_variable_annotations/
 ├── python_async_function/
 ├── python_async_comprehension/
+├── pagination/
 └── README.md
 ```
 
@@ -45,6 +46,10 @@ holbertonschool-web_back_end/
 ### python_async_comprehension
 - Async generators and async comprehensions: producing random values asynchronously and collecting them with elegant syntax
 - Python 3.9, `asyncio`, `random`, `typing.AsyncGenerator`, pycodestyle
+
+### pagination
+- Pagination strategies from simple index-based page slicing to hypermedia-enriched responses and deletion-resilient index tracking, applied on a real CSV dataset
+- Python 3.9, `csv`, `math`, `typing`, pycodestyle
 
 ---
 
