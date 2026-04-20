@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/banner.jpeg" alt="holbertonschool-web-back-end Banner">
+</p>
+
 # holbertonschool-web_back_end — Pagination
 
 > Because nobody wants to load 19,418 baby names at once. Trust me on this one.
