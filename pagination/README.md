@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.jpeg" alt="holbertonschool-web-back-end Banner">
+  <img src="./assets/banner.jpeg" alt="holbertonschool-web-back-end Banner" width="500">
 </p>
 
 # holbertonschool-web_back_end — Pagination
