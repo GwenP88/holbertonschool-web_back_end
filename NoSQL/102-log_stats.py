@@ -22,10 +22,10 @@ if __name__ == "__main__":
     print(str(nb_of_doc) + " status check")
     doc_ip = [
         {"$group": {"_id": "$ip", "total": {"$sum": 1}}},
-        {"$sort": {"total": -1}},
+        {"$sort": {"total": -1, "_id": -1}},
         {"$limit": 10}
     ]
     result = db.aggregate(doc_ip)
     print("IPs:")
     for ip in result:
-        print("\t{}: {}".format(ip["_id"], ip["total"]))
+        print("\t" + ip["_id"] + ": " + str(ip["total"]))
