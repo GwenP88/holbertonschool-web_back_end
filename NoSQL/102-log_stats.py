@@ -28,4 +28,4 @@ if __name__ == "__main__":
     result = db.aggregate(doc_ip)
     print("IPs:")
     for ip in result:
-        print("\t " + ip["_id"] + ": " + str(ip["total"]))
+        print("\t{}: {}".format(ip["_id"], ip["total"]))
