@@ -119,7 +119,7 @@ mongod --version
 </p>
 
 <p align="center">
-<sub>Mandatory tasks completion: 100% - Advanced tasks completion: 0%</sub>
+<sub>Mandatory tasks completion: 100% - Advanced tasks completion: 100%</sub>
 </p>
 ---
 
@@ -246,7 +246,6 @@ mongod --version
 
 ### Task 13 - Regex filter
 - **Status:** Advanced 🔮
-- **This task is still in progress — my future self is on it.**
 - **Objective:** Write a MongoDB script that lists all documents where `name` starts with `Holberton` using a regex filter.
 - **Constraint:** The database name is passed as a `mongo` command option.
 - **Expected behavior:** Returns all documents with names matching `/^Holberton/`.
@@ -255,8 +254,7 @@ mongod --version
 ---
 
 ### Task 14 - Top students
-- **Status:** Advanced 🔮
-- **This task is still in progress — my future self is on it.**
+- **Status:** Advanced 🔮**
 - **Objective:** Write a Python function `top_students(mongo_collection)` that returns all students sorted by average score, with `averageScore` added to each result.
 - **Constraint:** Results must be ordered by average score descending. Uses a MongoDB aggregation pipeline.
 - **Expected behavior:** Returns a sorted list of student documents each containing their computed `averageScore`.
@@ -266,17 +264,10 @@ mongod --version
 
 ### Task 15 - Log stats - new version
 - **Status:** Advanced 🔮
-- **This task is still in progress — my future self is on it.**
 - **Objective:** Improve `12-log_stats.py` by adding the top 10 most frequent IPs in the `nginx` collection, sorted by count.
 - **Constraint:** The IPs section must be sorted in descending order of occurrence.
 - **Expected behavior:** Same output as task 12, with an additional `IPs:` section displaying the top 10 addresses and their counts.
 - **Files:** `102-log_stats.py`
-
----
-
-## 🔮 What's Next
-
-I plan to continue working on this project by completing the advanced tasks that are not done yet. This will allow me to deepen my understanding, improve my skills, and push a bit further beyond the basics (because stopping halfway is not really my style).
 
 ---
 
