@@ -5,7 +5,7 @@
 def top_students(mongo_collection):
     """Return students sorted by average score with averageScore added."""
     result = mongo_collection.aggregate([
-        {"$set": {"averageScore": {"$avg": "$topics.score"}}},
+        {"$addFields": {"averageScore": {"$avg": "$topics.score"}}},
         {"$sort": {"averageScore": -1}}
     ])
     return list(result)
