@@ -28,6 +28,7 @@ holbertonschool-web_back_end/
 ├── python_async_function/
 ├── python_async_comprehension/
 ├── pagination/
+├── NoSQL/
 └── README.md
 ```
 
@@ -50,6 +51,10 @@ holbertonschool-web_back_end/
 ### pagination
 - Pagination strategies from simple index-based page slicing to hypermedia-enriched responses and deletion-resilient index tracking, applied on a real CSV dataset
 - Python 3.9, `csv`, `math`, `typing`, pycodestyle
+
+### NoSQL
+- Introduction to NoSQL databases and MongoDB: document storage, CRUD operations via MongoDB shell and PyMongo, aggregation pipelines, and real-world log analysis on Nginx access logs
+- MongoDB 4.4, Python 3.9, PyMongo 4.8.0, pycodestyle
 
 ---
 
