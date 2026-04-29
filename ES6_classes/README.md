@@ -84,20 +84,13 @@ npm run full-test
 
 ## 📊 Project Progress
 
-| # | Title | Status |
-|---|-------|--------|
-| 0 | You used to attend a place like this at some point | ✅ Done |
-| 1 | Let's make some classrooms | ✅ Done |
-| 2 | A Course, Getters, and Setters | ✅ Done |
-| 3 | Methods, static methods, computed methods names..... MONEY | ✅ Done |
-| 4 | Pricing | ✅ Done |
-| 5 | A Building | ✅ Done |
-| 6 | Inheritance | ✅ Done |
-| 7 | Airport | ✅ Done |
-| 8 | Primitive - Holberton Class | ✅ Done |
-| 9 | Hoisting | ✅ Done |
-| 10 | Vroom | ✅ Done |
-| 11 | EVCar | ✅ Done |
+<p align="center">
+<img src="assets/progress_barre_100.gif" alt="Mandatory tasks progress" width="80%">
+</p>
+
+<p align="center">
+<sub>Mandatory tasks completion: 100% — Advanced tasks completion: 100%</sub>
+</p>
 
 ---
 
