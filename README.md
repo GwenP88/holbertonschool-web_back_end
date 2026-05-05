@@ -10,7 +10,7 @@
 
 ## 📄 Description
 
-This repository contains my back-end development projects completed as part of the Holberton School curriculum. It focuses on Python's advanced features for building efficient, readable, and production-quality server-side code, as well as modern JavaScript through the ES6 standard. The Python projects explore type annotations, asynchronous programming with `asyncio`, and the elegant combination of async generators with async comprehensions. The JavaScript projects cover ES6 syntax and class-based object-oriented programming. Together, they form a cohesive arc: from making code self-documenting and type-safe, to understanding how to run tasks concurrently, to producing and consuming asynchronous data streams in a clean and Pythonic way — and on the JS side, from mastering modern syntax to building well-structured, inheritance-ready class hierarchies.
+This repository contains my back-end development projects completed as part of the Holberton School curriculum. It focuses on Python's advanced features for building efficient, readable, and production-quality server-side code, as well as modern JavaScript through the ES6 standard. The Python projects explore type annotations, asynchronous programming with `asyncio`, and the elegant combination of async generators with async comprehensions. The JavaScript projects cover ES6 syntax and class-based object-oriented programming, data manipulation with arrays and modern data structures, and asynchronous programming through Promises and `async/await`. Together, they form a cohesive arc: from making code self-documenting and type-safe, to understanding how to run tasks concurrently, to producing and consuming asynchronous data streams in a clean and Pythonic way — and on the JS side, from mastering modern syntax to building well-structured, inheritance-ready class hierarchies, manipulating data efficiently with ES6 methods, and handling asynchronous operations elegantly.
 
 ---
 
@@ -20,7 +20,11 @@ Across these projects, I learn how to use Python's type annotation system to cle
 
 On the JavaScript side, I understand what ES6 is and why it represents a major milestone in the evolution of the language. I can clearly articulate the difference between `const`, `let`, and `var`, and I know when to use each one appropriately. I am comfortable working with block-scoped variables, arrow functions, default parameters, rest and spread syntax, template literals, shorthand object syntax, computed property names, and `for...of` loops. I can write and consume iterators, and build report-style objects using ES6 patterns. I also know how to define ES6 classes, add instance and static methods, implement getters and setters with type validation, use `extends` and `super` for inheritance, and apply metaprogramming concepts using Symbols such as `Symbol.toPrimitive` and `Symbol.toStringTag`.
 
-By the end of this repository, I have a solid grasp of both the static and dynamic sides of modern Python — code that is well-typed, well-structured, and genuinely concurrent — as well as a strong foundation in modern JavaScript for writing clean, expressive, and object-oriented server-side code.
+I know how to use `map`, `filter`, and `reduce` on arrays to transform and aggregate data in a clean and functional style. I understand typed arrays and how to manipulate binary data using `ArrayBuffer` and `DataView`. I am comfortable working with the `Set`, `Map`, and `WeakMap` data structures, knowing when to use each one and how they differ from plain objects and arrays.
+
+I also understand what Promises are, why they exist, and how to use the `then`, `resolve`, and `catch` methods to handle asynchronous outcomes. I am comfortable using every method of the Promise object, including `Promise.all`, `Promise.allSettled`, and `Promise.race`. I know how to use `throw` and `try/catch` to handle errors gracefully, and I am able to write `async` functions using the `await` operator to make asynchronous code readable and maintainable.
+
+By the end of this repository, I have a solid grasp of both the static and dynamic sides of modern Python — code that is well-typed, well-structured, and genuinely concurrent — as well as a strong foundation in modern JavaScript for writing clean, expressive, object-oriented, and asynchronous server-side code.
 
 ---
 
@@ -35,6 +39,8 @@ holbertonschool-web_back_end/
 ├── NoSQL/
 ├── ES6_basic/
 ├── ES6_classes/
+├── ES6_data_manipulation/
+├── ES6_promise/
 └── README.md
 ```
 
@@ -68,6 +74,14 @@ holbertonschool-web_back_end/
 
 ### ES6_classes
 - Object-oriented programming in JavaScript using ES6 classes: constructors, getters and setters, instance and static methods, class inheritance with `extends` and `super`, and metaprogramming with `Symbol.toPrimitive` and `Symbol.toStringTag`
+- Node.js 20.x, Jest, Babel, ESLint (Airbnb), npm 9.x
+
+### ES6_data_manipulation
+- ES6 data manipulation techniques: `map`, `filter`, and `reduce` on arrays, typed arrays with `ArrayBuffer` and `DataView`, and modern data structures including `Set`, `Map`, and `WeakMap`
+- Node.js 20.x, Jest, Babel, ESLint (Airbnb), npm 9.x
+
+### ES6_promise
+- Asynchronous JavaScript through Promises: creating, resolving, and rejecting promises, chaining with `then` and `catch`, handling multiple promises with `Promise.all`, `Promise.allSettled`, and `Promise.race`, error handling with `throw` and `try/catch`, and writing `async/await` functions
 - Node.js 20.x, Jest, Babel, ESLint (Airbnb), npm 9.x
 
 ---
@@ -133,7 +147,7 @@ Each project directory is self-contained with its own `README.md`, source files,
 
 ## 🤝 Contributions & Acknowledgements
 
-A warm thank you to Holberton School for a curriculum that makes Python's advanced features feel genuinely exciting rather than intimidating. The async concurrency projects in particular deliver one of those rare "aha" moments — the kind that makes you immediately want to explain it to someone else. The ES6 projects are no different: once you replace `var` with `const` and `let`, you never look back. Thanks also to `mypy` for being the most constructively annoying type checker I have ever worked with.
+A warm thank you to Holberton School for a curriculum that makes Python's advanced features feel genuinely exciting rather than intimidating. The async concurrency projects in particular deliver one of those rare "aha" moments — the kind that makes you immediately want to explain it to someone else. The ES6 projects are no different: once you replace `var` with `const` and `let`, you never look back. And once you discover that `Promise.allSettled` exists, you wonder how you ever lived without it. Thanks also to `mypy` for being the most constructively annoying type checker I have ever worked with.
 
 ---
 
