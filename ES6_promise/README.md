@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.jpg" alt="holbertonschool-web-back-end Banner">
+  <img src="./assets/banner.jpeg" alt="holbertonschool-web-back-end Banner">
 </p>
 
 # ES6 Promises
