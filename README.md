@@ -10,7 +10,7 @@
 
 ## 📄 Description
 
-This repository contains my back-end development projects completed as part of the Holberton School curriculum. It focuses on Python's advanced features for building efficient, readable, and production-quality server-side code, as well as modern JavaScript through the ES6 standard. The Python projects explore type annotations, asynchronous programming with `asyncio`, and the elegant combination of async generators with async comprehensions. The JavaScript projects cover ES6 syntax and class-based object-oriented programming, data manipulation with arrays and modern data structures, and asynchronous programming through Promises and `async/await`. Together, they form a cohesive arc: from making code self-documenting and type-safe, to understanding how to run tasks concurrently, to producing and consuming asynchronous data streams in a clean and Pythonic way — and on the JS side, from mastering modern syntax to building well-structured, inheritance-ready class hierarchies, manipulating data efficiently with ES6 methods, and handling asynchronous operations elegantly.
+This repository contains my back-end development projects completed as part of the Holberton School curriculum. It focuses on Python's advanced features for building efficient, readable, and production-quality server-side code, as well as modern JavaScript through the ES6 standard. The Python projects explore type annotations, asynchronous programming with `asyncio`, and the elegant combination of async generators with async comprehensions. The JavaScript projects cover ES6 syntax and class-based object-oriented programming, data manipulation with arrays and modern data structures, and asynchronous programming through Promises and `async/await`. The Node.js projects go further by shifting from the browser to the server: building HTTP servers with Node's native `http` module and Express, reading files synchronously and asynchronously, and organizing a full structured server using controllers, routes, and ES6 modules via Babel. Together, they form a cohesive arc: from making code self-documenting and type-safe, to understanding how to run tasks concurrently, to producing and consuming asynchronous data streams in a clean and Pythonic way — and on the JS side, from mastering modern syntax to building well-structured, inheritance-ready class hierarchies, manipulating data efficiently with ES6 methods, handling asynchronous operations elegantly, and finally deploying that knowledge into a real server environment.
 
 ---
 
@@ -24,7 +24,9 @@ I know how to use `map`, `filter`, and `reduce` on arrays to transform and aggre
 
 I also understand what Promises are, why they exist, and how to use the `then`, `resolve`, and `catch` methods to handle asynchronous outcomes. I am comfortable using every method of the Promise object, including `Promise.all`, `Promise.allSettled`, and `Promise.race`. I know how to use `throw` and `try/catch` to handle errors gracefully, and I am able to write `async` functions using the `await` operator to make asynchronous code readable and maintainable.
 
-By the end of this repository, I have a solid grasp of both the static and dynamic sides of modern Python — code that is well-typed, well-structured, and genuinely concurrent — as well as a strong foundation in modern JavaScript for writing clean, expressive, object-oriented, and asynchronous server-side code.
+Through the Node.js projects, I am able to run JavaScript on a server using Node.js, use built-in modules like `fs` and `http`, and read files both synchronously and asynchronously. I know how to access command-line arguments and environment variables via the `process` object. I can build HTTP servers using both Node's native `http` module and the Express framework, define advanced and parameterized routes, use ES6 `import`/`export` syntax in Node with Babel, and use Nodemon to speed up development.
+
+By the end of this repository, I have a solid grasp of both the static and dynamic sides of modern Python — code that is well-typed, well-structured, and genuinely concurrent — as well as a strong foundation in modern JavaScript for writing clean, expressive, object-oriented, and asynchronous server-side code, all the way up to building and organizing a real HTTP server.
 
 ---
 
@@ -41,6 +43,7 @@ holbertonschool-web_back_end/
 ├── ES6_classes/
 ├── ES6_data_manipulation/
 ├── ES6_promise/
+├── Node_JS_basic/
 └── README.md
 ```
 
@@ -84,6 +87,10 @@ holbertonschool-web_back_end/
 - Asynchronous JavaScript through Promises: creating, resolving, and rejecting promises, chaining with `then` and `catch`, handling multiple promises with `Promise.all`, `Promise.allSettled`, and `Promise.race`, error handling with `throw` and `try/catch`, and writing `async/await` functions
 - Node.js 20.x, Jest, Babel, ESLint (Airbnb), npm 9.x
 
+### Node_JS_basic
+- Server-side JavaScript with Node.js: running scripts, reading files synchronously and asynchronously with `fs`, handling stdin with `process`, building HTTP servers with the native `http` module and with Express, defining parameterized routes, and organizing a full server into controllers and routes using ES6 modules via Babel and Nodemon
+- Node.js 20.x, Express 4.x, Babel (`babel-node`, `babel-preset-env`), Nodemon, Mocha, Chai, ESLint (Airbnb), npm
+
 ---
 
 ## 🛠️ Technologies Used
@@ -91,6 +98,8 @@ holbertonschool-web_back_end/
 The Python projects in this repository are written in **Python 3** (version 3.9) and run on **Ubuntu 20.04 LTS**. The main tools and modules used are the built-in `asyncio`, `random`, `time`, and `math` modules, along with Python's `typing` module for type annotations. Static type checking is performed with **mypy**. Code style is enforced with **pycodestyle** (version 2.5.x). No external frameworks are required beyond the Python standard library and `mypy`.
 
 The JavaScript projects are written in **JavaScript (ES6+)** and interpreted with **Node.js 20.x.x** on **Ubuntu 20.04 LTS**. They use **Jest** as the testing framework, **Babel** (via `babel-jest` and `@babel/preset-env`) for transpilation, and **ESLint** with the Airbnb base configuration for code quality. Scripts are managed through **npm 9.x.x**.
+
+The Node.js projects additionally use **Express 4.x** as the web framework, **Nodemon** for development auto-reloading, **Mocha** and **Chai** for integration testing, and **babel-node** with **babel-preset-env** to enable ES6 `import`/`export` syntax directly in Node.
 
 ---
 
@@ -103,12 +112,19 @@ The JavaScript projects are written in **JavaScript (ES6+)** and interpreted wit
 - mypy: optional but recommended for `python_variable_annotations` (`pip install mypy`)
 - All scripts must be executable and start with `#!/usr/bin/env python3`
 
-**For JavaScript projects:**
+**For JavaScript projects (ES6_*):**
 - OS: Ubuntu 20.04 LTS
 - Node.js: `20.x.x` / npm: `9.x.x`
 - Jest, Babel, and ESLint are installed via `npm install` from each project's `package.json`
 - All source files must use the `.js` extension and end with a new line
 - All functions must be exported
+
+**For Node.js projects (Node_JS_basic):**
+- OS: Ubuntu 20.04 LTS
+- Node.js: `20.x.x` / npm
+- Dependencies installed via `npm install` from `Node_JS_basic/package.json`
+- Required config files: `package.json`, `babel.config.js`, `.eslintrc.js`, `database.csv`
+- All functions/classes must be exported using `module.exports = myFunction;`
 
 ---
 
@@ -131,7 +147,7 @@ chmod +x 0-basic_async_syntax.py
 python3 0-basic_async_syntax.py
 ```
 
-**JavaScript projects** — use npm scripts after installing dependencies:
+**JavaScript projects (ES6_*)** — use npm scripts after installing dependencies:
 
 ```bash
 cd ES6_basic
@@ -141,13 +157,25 @@ npm run test            # Run all Jest tests
 npm run full-test       # Run tests + ESLint linting
 ```
 
+**Node.js projects** — start the dev server or run individual scripts:
+
+```bash
+cd Node_JS_basic
+npm install
+npm run dev                        # Start the full_server with Nodemon + Babel
+node 4-http.js                     # Run a standalone HTTP server
+node 7-http_express.js database.csv  # Run an Express server with the CSV database
+npm run test                       # Run Mocha tests
+npm run full-test                  # Run tests + ESLint linting
+```
+
 Each project directory is self-contained with its own `README.md`, source files, and any required assets.
 
 ---
 
 ## 🤝 Contributions & Acknowledgements
 
-A warm thank you to Holberton School for a curriculum that makes Python's advanced features feel genuinely exciting rather than intimidating. The async concurrency projects in particular deliver one of those rare "aha" moments — the kind that makes you immediately want to explain it to someone else. The ES6 projects are no different: once you replace `var` with `const` and `let`, you never look back. And once you discover that `Promise.allSettled` exists, you wonder how you ever lived without it. Thanks also to `mypy` for being the most constructively annoying type checker I have ever worked with.
+A warm thank you to Holberton School for a curriculum that makes Python's advanced features feel genuinely exciting rather than intimidating. The async concurrency projects in particular deliver one of those rare "aha" moments — the kind that makes you immediately want to explain it to someone else. The ES6 projects are no different: once you replace `var` with `const` and `let`, you never look back. And once you discover that `Promise.allSettled` exists, you wonder how you ever lived without it. The Node.js projects then tie it all together — because there is something deeply satisfying about calling `curl localhost:1245/students` and seeing your own server respond. Thanks also to `mypy` for being the most constructively annoying type checker I have ever worked with, and to Nodemon for silently restarting everything while I pretend I didn't just break the server again.
 
 ---
 
