@@ -18,11 +18,10 @@ function countStudents(path) {
       obj[field].push(firstname);
     });
     Object.keys(obj).forEach((group) => {
-      const firstnameTab = obj[group];
       const numberOfStudents = obj[group].length;
       const listOfName = obj[group].join(', ');
-      console.log(`Number of students in ${group}: ${numberOfStudents}. List: ${listOfName}`)
-    })
+      console.log(`Number of students in ${group}: ${numberOfStudents}. List: ${listOfName}`);
+    });
   } catch (error) {
     throw new Error('Cannot load the database');
   }
